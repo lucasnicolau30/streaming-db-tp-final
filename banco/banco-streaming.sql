@@ -83,5 +83,5 @@ CREATE TABLE avaliacao (
     nota INT CHECK (nota BETWEEN 1 AND 5),
     data_avaliacao DATE NOT NULL,
     FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id),
-    FOREIGN KEY (filme_id) REFERENCES filme(filме_id)
+    FOREIGN KEY (filme_id) REFERENCES filme(filme_id)
 );
